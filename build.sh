@@ -17,5 +17,5 @@ rm -rf $build_dir
 mkdir -p $build_dir
 
 cp $(which nvim) $build_dir/nvim.appimage
-cp -r ~/home/.config/nvim $build_dir/nvim_config
+cp -r ~/.config/nvim $build_dir/nvim_config
 cp $CDDIR/prerun.sh $build_dir/
