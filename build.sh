@@ -32,4 +32,4 @@ fi
 chmod u+x $appimage
 
 cp -r ~/.config/nvim $build_dir/nvim_config
-cp $CDIR/prerun.sh $build_dir/
+cp $CDIR/pluginrc.zsh $build_dir/
