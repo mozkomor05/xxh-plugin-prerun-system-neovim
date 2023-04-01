@@ -22,15 +22,14 @@ appimage=`basename $url`
 cd $build_dir
 
 if [ -x "$(command -v wget)" ]; then
- wget $arg_q $arg_progress $portable_url -O $appimage
+ wget $arg_q $arg_progress $url -O $appimage
 elif [ -x "$(command -v curl)" ]; then
- curl $arg_s -L $portable_url -o $appimage
+ curl $arg_s -L $url -o $appimage
 else
  echo Install wget or curl
 fi
 
 chmod u+x $appimage
 
-cp $(which nvim) $build_dir/nvim.appimage
 cp -r ~/.config/nvim $build_dir/nvim_config
 cp $CDIR/prerun.sh $build_dir/
