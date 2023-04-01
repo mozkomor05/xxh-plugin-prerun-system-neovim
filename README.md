@@ -1,0 +1,1 @@
+# XXH - System neovim configuration
