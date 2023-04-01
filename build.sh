@@ -16,11 +16,6 @@ done
 rm -rf $build_dir
 mkdir -p $build_dir
 
-for f in pluginrc.zsh
-do
-    cp $CDIR/$f $build_dir/
-done
-
 cp $(which nvim) $build_dir/nvim.appimage
 cp -r ~/home/.config/nvim $build_dir/nvim_config
 cp $CDDIR/prerun.sh $build_dir/
