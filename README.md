@@ -5,5 +5,5 @@ NeoVim plugin for xxh. This plugin is kind of untypical as it doesn't contain cu
 ## Install
 
 ```sh
-xxh +I xxh-plugin-system-neovim+https://github.com/mozkomor05/xxh-plugin-system-neovim
+xxh +I xxh-plugin-system-neovim+git+https://github.com/mozkomor05/xxh-plugin-system-neovim
 ```
